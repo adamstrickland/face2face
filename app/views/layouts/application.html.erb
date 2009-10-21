@@ -18,8 +18,8 @@
 		<%= stylesheet_link_tag 'redmond/jquery-ui-1.7.1.custom', :media => 'screen', :title => 'ui-theme' %>
 		<%= javascript_include_tag 'jrails' %>
 		<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'jquery.cookies', 'jquery.jeditable', 'jquery.cookies' %>
-		<%= javascript_include_tag 'jquery.selectedplugins', 'jquery-ui', 'jquery-ui-1.7.1.custom-date', 'jquery.daterangepicker' %>
-		<%= javascript_include_tag 'flexvite' %>
+		<%= javascript_include_tag 'jquery.selectedplugins', 'jquery-ui', 'jquery-ui.date', 'jquery-ui.explode', 'jquery-ui.daterangepicker' %>
+		<%= javascript_include_tag 'application' %>
 
 		<% if logged_in? %>
 		<script type="text/javascript"><!--
@@ -42,7 +42,7 @@
 			<div class="container">
 				<ul>
 					<li>
-						<%= link_to "Create a Flexvite", wizard_url, :class => "create" %>
+						<%= link_to "Create a Flexvite", new_event_meta_url, :class => "create" %>
 					</li>
 				<% if logged_in? %>
 					<li>

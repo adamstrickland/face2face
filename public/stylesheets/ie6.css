@@ -1,0 +1,292 @@
+body.subpage div.header div.logo img.logo.all {
+	display: none;
+}
+
+body.subpage div.header div.logo img.beta {
+	display: none;
+}
+
+body.subpage div.header div.logo img.logo.ie6 {
+	display: block;
+	position: relative;
+	top: -21px;
+	left: 30px;
+	height: 80px;
+	width: 293px;
+}
+
+div.header div.logo img.logo {
+	display: none;
+}
+
+div.header div.logo img.logoie6 {
+	display: block;
+}
+
+form.admin div.where {
+	
+}
+
+form.admin div.typeLocation {
+	width: 178px;
+	float: left;
+}
+
+form.admin div.searchLocation {
+	width: 169px;
+	float: left;
+	position: relative;
+	top: 30px;
+}
+
+form.admin div.searchLocation button {
+	position: relative;
+	top: 7px;
+}
+
+form.admin div.searchLocation img {
+	padding-top: 17px;
+	position: relative;
+	left: 6px;
+}
+
+form.admin input.daterange {
+	position: relative;
+	top: -33px;
+}
+
+/* ------------------------------------------------------------------------------------ misc */
+
+div.advanced {
+	padding-right: 8px;
+	position: relative;
+	top: -49px;
+	z-index: 3;
+}
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+	margin-left: -61px !important;
+}
+
+div.calwrap {
+	border: none;
+	margin-right: 4px;
+	margin-bottom: -14px;
+}
+
+div.day {
+	border: 1px solid #cccccc;
+}
+
+div.day.sun {
+	border: 1px solid #cccccc;
+}
+
+div.day.sat {
+border: 1px solid #cccccc;
+}
+
+div.google {
+	margin-top: -25px;	
+}
+
+div.day {
+	position: relative;
+	top: 0px;
+}
+
+* html div.content div.column.left.events, div.content div.column.right.register, div.content div.column.right.name {
+	height: 350px;
+}
+
+* html div.content div.column.left.login, div.content div.column.left.what {
+	height: 350px;
+}
+
+div.content div.column.right.account {
+	height: 350px;
+}
+
+div.orgtools {
+	right: 55px;
+}
+
+/* ------------------------------------------------------------------------------------ Homepage */
+
+div.hometop {
+	background: url(/images/home-feature-top.gif) no-repeat left bottom;
+	width: 838px;
+	height: 11px;
+	margin: 0 auto;
+}
+
+div.homebottom {
+	background: url(/images/home-feature-bottom.gif) no-repeat left top;
+	width: 838px;
+	height: 11px;
+	margin: 0 auto;
+}
+
+#slider-prev a, #slider-next a{
+	background:url(/images/arrow-left.gif) no-repeat 0 0;
+}
+
+#slider-next a{
+	background:url(/images/arrow-right.gif) no-repeat 0 0;
+}
+
+/* ------------------------------------------------------------------------------------ Content Layout */
+
+div.content {
+	
+}
+
+div.content.top {
+	min-height: 66px;
+	background: url(/images/content-top.gif) no-repeat center top;
+	color: #1e3484;
+	font-family: "Gill Sans";
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	padding: 0 35px;
+}
+
+div.content.middle {
+	background: url(/images/content-middle.gif) repeat-y top center;
+	padding: 25px 60px 0 60px;
+	position: relative;
+	z-index: 2;
+}
+
+div.content.middle.home {
+	height: 270px;
+}
+
+form.betasignup div.name {
+	background: url(/images/name-icon.gif) no-repeat 0px 15px;
+}
+
+form.betasignup div.email {
+	background: url(/images/email-icon.gif) no-repeat -4px 15px;
+}
+
+span.signup {
+	background: url(/images/sign-up-now.gif) no-repeat top left;
+	top: -3px;
+	left: 0px;
+}
+
+div.content div.socialmedia {
+	background: url(/images/do-this-too.gif) no-repeat 0px 0px;
+	position: absolute;
+	bottom: -70px;
+}
+
+div.shadow {
+	position: absolute;
+	width: 768px;
+	height: 46px;
+	background: url(/images/center-shadow.jpg) no-repeat top center;
+	top: 0;
+	z-index: 1;
+}
+
+div.content div.entry {
+	position: relative;
+	z-index: 10;
+	width: 768px;
+}
+
+div.content.bottom {
+	height: 31px;
+	background: url(/images/content-bottom.gif) no-repeat top center;
+	padding: 0px 60px;
+	position: relative;
+	z-index: 1;
+}
+
+div.details {
+	width: 530px;
+}
+
+div.details div.text {
+	width: 430px;
+}
+
+div.sidebar {
+}
+
+/* ------------------------------------------------------------------------------------ Navigation Layout */
+
+div.navigation ul li a.create {
+	background: url(/images/calendar-icon.gif) no-repeat top left;
+}
+
+div.navigation ul li a.account {
+	background: url(/images/folder-icon.gif) no-repeat top left;
+}
+
+div.navigation ul li a.login {
+	background: url(/images/key-icon.gif) no-repeat top left;
+}
+
+.addAddressMapButton {
+	background: url(/images/add-address-map-bg.jpg) no-repeat top left;
+	padding: 10px 20px 5px 33px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 2px;
+	width:160px;
+}
+
+.addAddressMapButton:hover {
+	color: #888888;
+}
+
+input.commentbutton {
+	background: url(/images/add-comment-bg.jpg) no-repeat top left;
+	padding: 4px 25px 12px 25px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	width: 114px;
+}
+
+.locationSelectButton {
+	background: url(/images/location-select-bg.jpg) no-repeat top left;
+	padding: 7px 26px 10px 25px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 2px;
+	width:100px;
+}
+
+.locationSelectButton:hover {
+	color: #888888;
+}
+
+
+div.whopics p {
+	line-height: 12px !important;
+	padding: 0 !important;
+}
+	div.whopics p.state { font-size: 10px; }
+		div.whopics p.state.notviewed { color: #aaaaaa; }
+		div.whopics p.state.viewed { color: #f3c366; }
+		div.whopics p.state.voted, div.whopics p.state.attending { color: #59A151; }
+		div.whopics p.state.notattending { color: #DF2929; }
+		
+div.whopics li {
+	margin-bottom: -13px;
+}

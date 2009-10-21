@@ -1,6 +1,6 @@
-<%= javascript_include_tag 'create_event' %>
+<%= javascript_include_tag 'event_meta/new' %>
 <% ['util', 'basic', 'abc_launcher'].each do |js| %>
-<%= javascript_include_tag "http://www.plaxo.com/css/m/js/#{js}.js" %>
+	<%= javascript_include_tag "http://www.plaxo.com/css/m/js/#{js}.js" %>
 <% end %>
 <div class="content top">
 	<h2>Let's get some folks together</h2>
@@ -9,19 +9,19 @@
 	<div class="shadow"></div>
 	<%= render :partial => 'errors_and_messages' %>
 	<!-- <form class="admin" id="createEventForm" name="createEventForm" enctype="multipart/form-data" action="{% url CreateEventHandler %}.json" method="post"> -->
-	<% form_remote_tag :url => { :action => 'create', :format => 'json' }, :class => 'admin', :id => 'createEventForm' %>
+	<% form_remote_for :meta, @meta, :url => event_meta_path(@meta), :format => 'json', :html => { :method => :put, :class => "admin", :id => "createEventForm" } do |f| %>
 		
 		<input type="hidden" name="startTimeTimeZone" id="startTimeTimeZone" value="Central" />
 		
 		<div class="column left what">
 			<% ['what', 'where', 'day', 'time'].each do |p| %>
-			<%= render :partial => p %>
+				<%= render :partial => p %>
 			<% end %>
 		</div>
 	
 		<div class="column right name">
 			<% ['name','id','invitees'].each do |p| %>
-			<%= render :partial => p %>
+				<%= render :partial => p %>
 			<% end %>
 			
     		<div class="buttonwrapper alignright">

@@ -1,0 +1,18 @@
+form.admin div.typeLocation {
+	
+}
+
+form.admin div.searchLocation {
+
+}
+
+form.admin div.searchLocation {
+	position: relative;
+	top: 35px;
+}
+
+form.admin div.searchLocation img {
+	position: relative;
+	left: 6px;
+	top: 5px;
+}

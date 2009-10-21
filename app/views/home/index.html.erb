@@ -1,0 +1,62 @@
+<%= javascript_include_tag 'jquery.easyslider' %>
+<script type="text/javascript">	
+	$(document).ready(function(){
+		$("#slider").easySlider({
+			controlsFade: true,
+			speed: 300,
+			pause: 15000
+		})
+	})
+</script>
+<div class="hometop"></div>
+<div class="homewrapper">
+	<div id="slider">
+		<ul>
+			<li>
+				<div class="image">
+					<%= image_tag 'votezoom', :width => 312, :height => 209, :alt => 'How voting works' %>
+				</div>
+				<div class="text">
+					<br/>
+					<h2>Find a day that works for more people!</h2>
+					<p>You can maximize attendance by adapting to the schedule of the people you invite.</p>
+					<br/>
+					<h2>Kiss back-and-forth e-mail goodbye!</h2>
+					<p>Flexvite is easy to use.  Like e-mail, everyone can participate.  Unlike e-mail though, you can set it and forget it.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="homebottom"></div>
+<div class="homesubtextwrap">
+	<div class="leftcol">
+		<div class="step">
+			<%= image_tag 'index-create-icon', :alt => 'Step One' %>
+			<img class="left" src="/images/index-create-icon.jpg" alt="Step One" />
+			<h2>Create an event with flexible details</h2>
+			<p>Give us a vague time frame for your lunch, happy hour, or sales meeting. We'll send an e-mail for you asking your invitees to help you find the best day for the event.</p>
+		</div>
+		<div class="step">
+			<%= image_tag 'index-vote-icon', :alt => 'Step Two' %>
+			<h2>Everyone votes their preferences</h2>
+			<p>As people receive their Flexvite e-mails, they'll have a chance to vote, see how others have voted, and leave comments. All this happens here - no inbox clutter.</p>
+		</div>
+		<div class="step">
+			<%= image_tag 'index-mail-icon', :alt => 'Step Three' %>
+			<h2>The day is set and emailed out to all</h2>
+			<p>The winning day is chosen based on voting as quickly as possible. As soon as a winner is chosen, everyone is notified via e-mail. <strong>Simple.</strong></p>
+		</div>
+	</div>
+	<div class="rightcol">
+		<div class="getstarted">
+			<h2>Get Started Now!</h2>
+			<%= link_to 'Create a Flexvite' new_event_meta_path, :class => 'getstarted' %>
+			<p>It's free and super easy! You don't even have to register first; we'll send you a password</p>
+		</div>
+		<div class="blog">
+			<h3>From Our Blog:</h3>
+		</div>
+	</div>
+	<hr />
+</div>

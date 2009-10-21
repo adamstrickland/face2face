@@ -1,0 +1,139 @@
+div.advanced {
+	padding-right: 8px;
+	position: relative;
+	top: -49px;
+	z-index: 3;
+}
+
+.ac_results {
+	padding: 0px;
+	border: 1px solid black;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+	margin-left: -61px !important;
+}
+
+div.calwrap {
+	border: none;
+	margin-right: 4px;
+	margin-bottom: -14px;
+}
+
+div.day {
+	border: 1px solid #cccccc;
+}
+
+div.day.sun {
+	border: 1px solid #cccccc;
+}
+
+div.day.sat {
+border: 1px solid #cccccc;
+}
+
+div.google {
+	margin-top: -25px;	
+}
+
+span.signup {
+	top: -4px;
+}
+
+* html div.content div.column.left.events, div.content div.column.right.register, div.content div.column.right.name {
+	position: relative;
+}
+
+* html div.content div.column.left.login, div.content div.column.left.what, div.content div.column.right.account {
+	height: 350px;
+	position: absolute;
+}
+
+div.daytitles {
+	margin-bottom: -15px;
+}
+
+form.admin input.daterange {
+	position: relative;
+	top: -33px;
+}
+
+form.admin div.where {
+	
+}
+
+
+form.admin div.typeLocation {
+	width: 178px;
+	float: left;
+}
+
+form.admin div.searchLocation {
+	width: 169px;
+	float: left;
+	position: relative;
+	top: 37px;
+	margin-left: 5px;
+}
+
+form.admin div.searchLocation div.buttonwrapper {
+	position: relative;
+	top: -30px;
+}
+
+form.admin div.searchLocation img {
+	padding-top: 17px;
+	position: relative;
+	left: 6px;
+}
+
+form.admin div.where div#address {
+	margin: -13px 0 18px 7px;
+	font-size: 10px;
+	color: #a1a1a0;
+}
+
+.addAddressMapButton {
+	background: url(/images/add-address-map-bg.jpg) no-repeat top left;
+	padding: 8px 10px 5px 30px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 2px;
+	width:160px;
+}
+
+.locationSelectButton {
+	background: url(/images/location-select-bg.jpg) no-repeat top left;
+	padding: 5px 18px 5px 8px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+input.commentbutton {
+	background: url(/images/add-comment-bg.jpg) no-repeat top left;
+	padding: 4px 25px 12px 25px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	width: 114px;
+}
+
+div.whopics p {
+	line-height: 12px !important;
+	padding: 0 !important;
+}
+	div.whopics p.state { font-size: 10px; }
+		div.whopics p.state.notviewed { color: #aaaaaa; }
+		div.whopics p.state.viewed { color: #f3c366; }
+		div.whopics p.state.voted, div.whopics p.state.attending { color: #59A151; }
+		div.whopics p.state.notattending { color: #DF2929; }
+		
+div.whopics li {
+	margin-bottom: -13px;
+}

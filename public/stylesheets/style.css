@@ -1,0 +1,1738 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+html,body {
+	font-family: "Trebuchet MS";
+	height: 100.1%;
+}
+
+body.beta {
+	background: #59753c url(/images/body-bg.jpg) no-repeat top center;
+}
+
+body.subpage {
+	background: #59753c url(/images/body-bg-fade.jpg) repeat-x top;
+	position: relative;
+}
+
+div.container {
+	width: 888px;
+	margin: 0 auto;
+	position: relative;
+}
+
+hr {
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+
+img {
+	border: none;
+}
+
+blockquote {
+	padding: 0 25px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* ------------------------------------------------------------------------------------ Button Styling */
+
+div.buttonwrapper.alignleft {
+	float: left;
+	position: relative;
+	left: -3px;
+	z-index: 15;
+}
+
+div.buttonwrapper.alignright {
+	float: right;
+	z-index: 15;
+}
+
+div.buttonwrapper.alignright.login, div.buttonwrapper.alignright.location {
+	position: relative;
+	left: -2px;
+}
+
+div.buttonwrapper.alignleft.location {
+	left: 10px;
+	top: 34px;
+}
+
+span.outerbtnwrap {
+	background: url(/images/btnLeft-yellow.gif) no-repeat top left;
+	display:block;
+	float:left;
+	margin-right: 5px;
+}
+
+span.innerbtnwrap {
+	background: url(/images/btnRight-yellow.gif) no-repeat top right;
+	display:block;
+	float:left;
+}
+
+input.button, a.button {
+	background: url(/images/btnMiddle-yellow.gif) repeat-x top;
+	border: none;
+	margin: 0 18px;
+	padding: 9px 7px 15px;
+	color: #ae7111;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: bold;
+	display: block;
+	text-decoration: none;
+}
+
+input.button:hover, a.button:hover {
+	color: #ffffff;
+}
+
+form.admin input.create {
+	float: right;
+	position: relative;
+	z-index: 100;
+}
+
+div.buttonwrapper .blockUI {
+	background-color: #F7F6F1 !important;
+}
+
+/* ------------------------------------------------------------------------------------ Header */
+
+div.header {
+	height: 280px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+body.subpage div.header {
+	height: 75px;
+	text-align: left;
+}
+
+div.header div.logo img.logo {
+	position: relative;
+	top: 60px;
+}
+
+div.header div.logo img.logoie6 {
+	display: none;
+	position: relative;
+	top: 60px;
+}
+
+div.header div.logo h2 {
+	position: relative;
+	top: 60px;
+}
+
+body.subpage div.header div.logo img.logo.all {
+	position: relative;
+	top: -21px;
+	left: 30px;
+	width: 250px;
+}
+
+body.subpage div.header div.logo img.beta {
+	position: relative;
+	top: -54px;
+	left: 0px;
+	z-index: -1;
+}
+
+body.subpage div.header div.logo img.logo.ie6 {
+	display: none;
+}
+
+div.header h1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-indent: -9999px;
+}
+
+div.header h2 {
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+}
+
+div.header p.feedback {
+	color: #364C20;
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	right: 26px;
+}
+
+div.header p.feedback a {
+	color: #364C20;
+	font-weight: bold;
+}
+
+div.header p.feedback a:hover {
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------ Navigation */
+
+div.navigation {
+	background: #364c20;
+	text-align: right;
+	color: #ffffff;
+	padding: 12px 0;
+	font-size: 12px;
+}
+
+div.navigation ul, div.navigation li {
+	display: inline;
+	list-style-type: none;
+}
+
+div.navigation ul {
+	position: relative;
+	right: 26px;
+}
+
+div.navigation ul li a {
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 5px 0 5px 30px;
+	margin-left: 15px;
+}
+
+div.navigation ul li a:hover {
+	text-decoration: underline;
+}
+
+div.navigation ul li a.create {
+	background: url(/images/calendar-icon.png) no-repeat top left;
+}
+
+div.navigation ul li a.account {
+	background: url(/images/folder-icon.png) no-repeat top left;
+}
+
+div.navigation ul li a.login {
+	background: url(/images/key-icon.png) no-repeat top left;
+}
+
+/* ------------------------------------------------------------------------------------ Content Layout */
+
+div.content {
+	
+}
+
+div.content.top {
+	min-height: 66px;
+	background: url(/images/content-top.png) no-repeat center top;
+	color: #1e3484;
+	font-family: "Gill Sans";
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	padding: 0 35px;
+}
+
+div.content.middle {
+	background: url(/images/content-middle.png) repeat-y top center;
+	padding: 25px 60px 0 60px;
+	position: relative;
+	z-index: 2;
+}
+
+div.shadow {
+	position: absolute;
+	width: 768px;
+	height: 46px;
+	background: url(/images/center-shadow.jpg) no-repeat top center;
+	top: 0;
+	z-index: 1;
+}
+
+div.content div.entry, div.column {
+	position: relative;
+	z-index: 10;
+}
+
+div.content.bottom {
+	height: 31px;
+	background: url(/images/content-bottom.png) no-repeat top center;
+	padding: 0px 60px;
+	position: relative;
+	z-index: 1;
+}
+
+/* ------------------------------------------------------------------------------------ Columns */
+
+div.content div.column.left {
+	min-height:220px;
+	height: auto;
+	padding-right:32px;
+	width:350px;
+	padding-top: 10px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+div.content div.column.right {
+	position: absolute;
+	top: 0;
+	left: 373px;
+	width: 350px;
+	text-align: left;
+	position: absolute;
+	min-height: 220px;
+	height: auto;
+	padding-top: 10px;
+	padding-left: 32px;
+	border-left: 1px solid #dddddd;
+	
+}
+
+div.content div.column.left.events, div.content div.column.right.register, div.content div.column.right.name {
+	position: relative;
+	min-height: 350px;
+}
+
+div.content div.column.left.login, div.content div.column.left.what, div.content div.column.right.account {
+	position: absolute;
+	min-height: 350px;
+}
+
+div.content div.column.right.noborder {
+	border: none;
+}
+div.content div.socialmedia {
+	background: url(/images/do-this-too.png) no-repeat 0px 0px;
+	padding: 20px 0 25px 0;
+	width: 315px;
+	position: absolute;
+	right: 0;
+	bottom: -30px;
+}
+
+/* ------------------------------------------------------------------------------------ Content Text Styles */
+
+div.content.top h2 {
+	padding-top: 18px;
+	padding-bottom: 15px;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+div.entry p {
+	padding: 0px 0 16px 0;
+	line-height: 22px;
+	font-size: 13px;
+}
+
+div.entry p a, div.content div.column.right a, div.orgtools a, div.entry a {
+	color: #27a0ed;
+	text-decoration: underline;
+}
+
+div.entry p a:hover, div.content div.column.right a:hover, div.orgtools a:hover {
+	text-decoration: none;
+}
+
+span.hint a {
+	font-weight: bold;
+}
+
+div.entry.about h3 {
+	color: #27a0ed;
+	margin-bottom: 0;
+	font-size: 24px;
+}
+
+div.entry.about h3 span.title {
+	color: #aaaaaa;
+	font-size: 18px;
+}
+
+div.entry.about p.meta {
+	margin-top: -10px;
+	color: #a1a1a0;
+}
+
+span.timezone {
+	font-size: 11px;
+	color: #cccccc;
+}
+
+h3.closed span.timezone {
+	font-size: 22px;
+	color: #cccccc;
+}
+
+div.entry ul, div.entry ol {
+	padding: 8px 22px;
+}
+
+div.entry li {
+	line-height: 22px;
+	font-size: 13px;
+}
+
+div.content div.column.left p {
+	font-size: 15px;
+}
+
+span.spanholder {
+	position: relative;
+	color: #FCF8EF;
+}
+
+span.signup {
+	display: block;
+	position: absolute;
+	width: 167px;
+	height: 38px;
+	background: url(/images/sign-up-now.png) no-repeat top left;
+	top: -12px;
+	left: 0px;
+}
+
+div.content div.socialmedia p {
+	padding: 0 0 0 75px;
+}
+
+div.content div.socialmedia p img {
+	vertical-align: middle;
+}
+
+/* ------------------------------------------------------------------------------------ Home page style */
+
+div.homewrapper {
+	position: relative;
+	width: 838px;
+	height: 250px;
+	overflow: hidden;
+	background: #4d6633;
+	margin: 0 auto;
+}
+
+div.hometop {
+	background: url(/images/home-feature-top.png) no-repeat left top;
+	width: 838px;
+	height: 11px;
+	margin: 0 auto;
+}
+
+div.homebottom {
+	background: url(/images/home-feature-bottom.png) no-repeat left top;
+	width: 838px;
+	height: 11px;
+	margin: 0 auto;
+}
+
+img.goleft, img.goright {
+	position: absolute;
+	top: 91px;
+}
+
+img.goleft {
+	left: 15px;
+}
+
+img.goright {
+	right: 15px;
+}
+
+div.homewrapper ul {
+	list-style-type: none;
+	width: 2514px;
+}
+
+div.homewrapper ul li {
+	display: block;
+	float: left;
+	width: 838px;
+}
+
+div.homewrapper ul li div.image {
+	float: left;
+	padding: 20px 0;
+}
+
+div.homewrapper ul li div.text {
+	float: left;
+	width: 400px;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 20px 25px;
+}
+
+div.homewrapper ul li div.text h1 {
+	font-size: 36px;
+	padding-bottom: 10px;
+}
+
+div.homewrapper ul li div.text p {
+	line-height: 22px;
+}
+
+
+div.homewrapper h2 {
+	font-size: 22px;
+}
+
+
+div.homesubtextwrap {
+	padding: 20px 0 10px 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 850px;
+}
+
+div.leftcol {
+	width: 400px;
+	padding-right: 20px;
+	float: left;
+	border-right: 1px solid #859b6d;
+}
+
+div.rightcol {
+	width: 405px;
+	padding-left: 20px;
+	float: left;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+div.step {
+	padding: 15px 0px;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+div.step h2 {
+	padding-bottom: 2px;
+	font-size: 16px;
+	position: relative;
+	top: -4px;
+}
+
+div.step p {
+	line-height: 18px;
+}
+
+div.step img.left {
+	float: left;
+	padding: 0 10px 20px 0;
+}
+
+div.getstarted {
+	background: url(/images/getstarted-home-bg.jpg) no-repeat left top;
+	padding: 7px 20px;
+	margin-top: 10px;
+	height: 153px;
+}
+
+div.getstarted h2 {
+	font-size: 22px;
+	font-weight: normal;
+	padding: 7px 0 15px 0;
+	color: #1e3484;
+	font-family: "Gill Sans";
+	text-align: center;
+}
+
+div.getstarted p {
+	line-height: 18px;
+	color: #666666;
+	width: 175px;
+	margin-top: 10px;
+}
+
+div.getstarted a.getstarted {
+	background: url(/images/getstarted-arrow.jpg) no-repeat left top;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ae7111;
+	padding: 15px 27px;
+	text-decoration: none;
+	margin-top: 15px;
+	position: relative;
+	left: -4px;
+	width: 130px;
+	float: right;
+	position: relative;
+	left: 7px;
+}
+
+div.getstarted a.getstarted:hover {
+	color: #ffffff;
+}
+
+div.socialmedia {
+	
+}
+
+div.blog {
+	padding: 10px 0;
+	line-height: 18px;
+}
+
+div.blog h3 {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+div.blog h2.blogtitle {
+	padding-bottom: 10px;
+	margin-top:4px;
+	font-size: 20px;
+}
+
+div.blog a {
+	color: #ffde6d;
+	text-decoration: underline;
+}
+
+div.blog a:hover {
+	text-decoration: none;
+}
+
+div.socialmedia ul {
+	list-style-type: none;
+}
+
+#slider ul, #slider li{
+	
+}
+
+#slider li{
+	height: 250px
+}
+
+#slider-prev, #slider-next{
+	display:block;
+	z-index:1000;
+	position:absolute;
+	top:91px;
+	left:15px;
+	height:67px;
+	width:37px;
+}
+
+#slider-next{
+	left:786px;  /* homewrapper.width - arrow-left.width - 15 [offset from edge] => 838 - 37 - 15 = 786 */
+}
+
+#slider-prev a, #slider-next a{
+	display:block;
+	position:relative;
+	width:37px;
+	height:67px;
+	background:url(/images/arrow-left.png) no-repeat 0 0;
+}
+
+#slider-next a{
+	background:url(/images/arrow-right.png) no-repeat 0 0;
+}
+
+/* ------------------------------------------------------------------------------------ Events style */
+
+div.events h3 {
+	height: 35px;
+}
+
+div.events h3 span.currentevents {
+	display: block;
+	position: absolute;
+	background: url(/images/my-current-events.gif) no-repeat top left;
+	width: 241px;
+	height: 35px;
+}
+
+div.events h3 span.pastevents {
+	display: block;
+	position: absolute;
+	background: url(/images/my-past-events.gif) no-repeat top left;
+	width: 241px;
+	height: 35px;
+}
+
+ul.events, ul.events li ul {
+	list-style-type: none;
+	padding: 0px 0 10px 10px;
+}
+
+ul.events {
+	padding-left: 8px;
+	padding-bottom: 12px;
+}
+
+ul.events li {
+	padding-bottom: 8px;
+	color: #A1A1A0;
+	font-size: 13px;
+}
+
+ul.events li h4, ul.events li h4 a {
+	font-size: 15px !important;
+	color: #27a0ed !important;
+}
+
+ul.events li ul li {
+	font-size: 13px !important;
+	color: #a1a1a0 !important;
+	padding-bottom: 0 !important;
+}
+
+ul.events span.confirmed {
+	color: #27a0ed;
+	font-weight: bold;
+}
+
+ul.events span.yes {
+	color: #5c9b1b;
+	font-weight: bold;
+}
+
+ul.events span.no {
+	color: #e71313;
+	font-weight: bold;
+}
+
+
+/* ------------------------------------------------------------------------------------ Form.asynchronous Elements */
+
+form.asynchronous span#submitMessage {
+	display:none;
+}
+
+
+/* ------------------------------------------------------------------------------------ Form.admin Elements */
+
+form.admin {
+	position: relative;
+	z-index: 10;
+}
+
+form.admin img.photo {
+	float: left;
+	padding: 0 8px 8px 0;
+}
+
+form.admin div.alignleft {
+	float: left;
+}
+
+form.admin p {
+	color: #a1a1a0 !important;
+	font-size: 12px !important;
+	padding-bottom: 5px;
+}
+
+form.admin img {
+	vertical-align: middle;
+}
+
+form.admin input.photo {
+	margin-bottom: 5px;
+}
+
+form.admin label {
+	font-size: 17px;
+	display: block;
+	color: #a1a1a0;
+}
+
+form.admin .advancedoptiontext {
+	font-size: 17px;
+	color: #a1a1a0;
+}
+
+form.admin input.text, input.text {
+	background: #ffffff;
+	border: 1px solid #666666;
+	width: 330px;
+	padding: 5px;
+	font-size: 18px;
+	color: #999999;
+	margin-bottom: 15px; 
+}
+
+form.admin input.text.short {
+	background: #ffffff;
+	border: 1px solid #666666;
+	width: 170px;
+	font-size: 18px;
+	color: #999999;
+}
+
+form.admin input.text.medium {
+	background: #ffffff;
+	border: 1px solid #666666;
+	width: 200px;
+	font-size: 18px;
+	color: #999999;
+}
+
+input.text.disabled {
+	background: #dddddd !important;
+}
+
+form.admin input.checkbox {
+	margin-top:15px;
+	margin-right:8px;
+}
+
+form.admin select.dayCountDropDown {
+	width: 45px;
+}
+
+form.admin div.alignleft.left {
+	margin-right: 15px
+}
+
+div.oldpw {
+	width: 165px;
+	float: left;
+	padding-right: 10px;
+}
+
+div.newpw {
+	width: 165px;
+	float: left;
+}
+
+form.admin textarea.invitees {
+	width: 330px;
+	height: 87px;
+	background: #ffffff;
+	border: 1px solid #666666;
+	padding: 5px;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #999999;
+}
+
+form.admin div.where {
+	
+}
+
+.addAddressMapButton {
+	background: url(/images/add-address-map-bg.jpg) no-repeat top left;
+	padding: 10px 13px 13px 33px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.addAddressMapButton:hover {
+	color: #888888;
+}
+
+.locationSelectButton {
+	background: url(/images/location-select-bg.jpg) no-repeat top left;
+	padding: 7px 26px 10px 25px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.locationSelectButton:hover {
+	color: #888888;
+}
+
+form.admin div.typeLocation {
+	width: 181px;
+	float: left;
+}
+
+form.admin div.searchLocation {
+	width: 169px;
+	float: left;
+	position: relative;
+	top: 30px;
+}
+
+form.admin div.searchLocation img {
+	padding-top: 10px;
+	position: relative;
+	left: 4px;
+}
+
+form.admin div.searchLocation div.buttonwrapper {
+	position: relative;
+	top: 2px;
+}
+
+form.admin div.where div#address {
+	margin: -13px 0 18px 7px;
+	font-size: 10px;
+	color: #a1a1a0;
+}
+
+form.admin div.where div#address img {
+	padding: 0 4px 15px 0;
+	float: left;
+}
+
+form.admin div.date {
+	margin: 0 0 15px 0;
+}
+
+form.admin select {
+	background: #ffffff;
+	border: 1px solid #666666;
+	padding: 6px 5px;
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	color: #999999;
+	width: 110px;
+}
+
+form.admin span.hint {
+	font-size: 11px;
+	color: #27a0ed;
+}
+
+form.admin img.within {
+	margin-right: -15px;
+}
+
+div#emailValidationMessage {
+	font-size: 12px;
+	padding: 4px 0 4px 22px;
+}
+
+div#emailValidationMessage.positive {
+	background: url(/images/tick.gif) no-repeat left 4px;
+	color: #59A151;
+}
+
+div#emailValidationMessage.negative {
+	background: url(/images/cross.gif) no-repeat left 4px;
+	color: #DF2929;
+	
+}
+
+div.advanced {
+	padding-right: 8px;
+	position: relative;
+	top: -35px;
+	z-index: 3;
+	width: 200px;
+}
+
+form.admin span.hint.advanced {
+	padding-bottom: 15px;
+	display: block;
+}
+
+div.advanced h4.slidetoggle {
+	width: 130px;
+}
+
+div.advanced h4 a {
+	font-size: 13px;
+	display: block;
+	padding-right: 20px;
+	color: #a1a1a0 !important;
+	font-weight: normal;
+	background: url(/images/arrow.gif) no-repeat 106px bottom;
+	width: 110px;
+}
+
+div.advanced h4.active a {
+	background: url(/images/arrow.gif) no-repeat 106px top;
+}
+
+div.slidecontainer {
+	width: 350px;
+}
+
+div.closedcal div.slidecontainer {
+	width: 760px;
+}
+
+/* ------------------------------------------------------------------------------------ Form.betasignup Elements */
+
+form.betasignup label {
+	visibility: hidden;
+	font-size: 10px;
+	display: block;
+}
+
+form.betasignup input.text {
+	background: #ffffff;
+	border: 1px solid #666666;
+	padding: 10px;
+	width: 270px;
+	font-size: 20px;
+	color: #999999;
+}
+
+form.betasignup div.name {
+	background: url(/images/name-icon.png) no-repeat 0px 15px;
+	height: 66px !important;
+}
+
+form.betasignup div.email {
+	background: url(/images/email-icon.png) no-repeat -4px 15px;
+	height: 66px;
+}
+
+form.betasignup input.name, form.betasignup input.email {
+	margin-left: 60px;
+}
+
+form.betasignup input.submit {
+	background: url(/images/sign-me-up.png) no-repeat top left;
+	text-indent: -9999px;
+	width: 196px;
+	height: 46px;
+	border: none;
+	cursor: pointer;
+	float: right;
+}
+
+form.betasignup input.submit:hover {
+	background: url(/images/sign-me-up-hover.png) no-repeat top left;
+}
+
+/* ------------------------------------------------------------------------------------ Login and register form */
+
+h2.login {
+	text-indent: -9999px;
+	background: url(/images/login-here.gif) no-repeat top left;
+	display: block;
+	height: 48px;
+	width: 200px;
+	margin-left: -12px;
+}
+
+h2.search {
+	text-indent: -9999px;
+	background: url(/images/search.gif) no-repeat top left;
+	display: block;
+	height: 36px;
+	width: 96px;
+	margin-left: -3px;
+	padding-bottom: 13px;
+}
+
+h2.register {
+	text-indent: -9999px;
+	background: url(/images/register-here.gif) no-repeat top left;
+	display: block;
+	height: 48px;
+	width: 200px;
+	margin-left: -12px;
+}
+
+div.locationwrap {
+	width: 350px;
+}
+
+div.google {
+	
+}
+
+/* ------------------------------------------------------------------------------------ View Event Details */
+
+div.details {
+	position: relative;
+	z-index: 10;
+	width: 600px;
+}
+
+div.details img.photo {
+	float: left;
+	padding: 0 15px 0 0;
+}
+
+div.details div.text {
+	float: left;
+	width: 535px;
+}
+
+div.details p {
+	padding: 0;
+	margin: 0;
+	color: #a1a1a0;
+	line-height: 18px;
+}
+
+div.details h3 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #27a0ed;
+	padding: 0;
+	margin: 0;
+}
+
+div.details h3.gray {
+	color: #a1a1a0;
+	padding-top: 15px;
+}
+
+div.legend {
+	
+}
+
+div.legend div.good, div.legend div.bad {
+	width: 80px;
+	text-align: center;
+	float: left;
+	padding-right: 10px;
+}
+
+div.legend div.good h5, div.legend div.bad h5 {
+	font-weight: normal;
+	color: #27a0ed;
+	font-size: 12px;
+	padding: 0;
+}
+
+div.legend p.hint {
+	line-height: 14px !important;
+	color: #a1a1a0;
+	font-size: 11px !important;
+	padding-bottom: 15px;
+}
+
+/* ------------------------------------------------------------------------------------ Calendar */
+
+div.viewcolumn {
+	width: 560px;
+	float: left;
+}
+
+div.calendar_container {
+	padding-top: 15px;
+	width: 539px;
+}
+
+div.calendar {
+	width: 539px;
+	margin-bottom: 15px;
+}
+
+h3.month {
+	text-align: center;
+	color: #27a0ed;
+	font-size: 22px;
+}
+
+div.calendar div.daytitles ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+div.calendar div.daytitles ul li {
+	display: block;
+	float: left;
+	width: 76.5px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #27a0ed;
+}
+	div.calendar div.daytitles ul li#sunday {background: url(/images/sunday.gif) no-repeat bottom center;}
+	div.calendar div.daytitles ul li#monday {background: url(/images/monday.gif) no-repeat bottom center;}
+	div.calendar div.daytitles ul li#tuesday {background: url(/images/tuesday.gif) no-repeat bottom center;}
+	div.calendar div.daytitles ul li#wednesday {background: url(/images/wednesday.gif) no-repeat bottom center;}
+	div.calendar div.daytitles ul li#thursday {background: url(/images/thursday.gif) no-repeat bottom center;}
+	div.calendar div.daytitles ul li#friday {background: url(/images/friday.gif) no-repeat bottom center;}
+	div.calendar div.daytitles ul li#saturday {background: url(/images/saturday.gif) no-repeat bottom center;}
+
+div.week {white-space: nowrap;}
+
+div.day {
+	width: 75px;
+	height: 75px;
+	display: block;
+	float: left;
+	background: #ffffff;
+	position: relative;
+	border-left: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+	div.day.sun {border-left: none}
+	div.day.sat {border-right: none}
+
+	div.day div.marker {display: none;}
+	div.day.today div.marker {display: block; position: absolute; top: 4px; right: 0; padding: 2px 6px; font-size: 8px; background: #98d4f9; color: #1e3484; letter-spacing: 1px;}
+
+	div.day div.cutoffMarker {display: none;}
+	div.day div.winnerMarker {display: none;}
+	div.day.winner div.winnerMarker {display: block; position: absolute; top: 20px; right: 0; padding: 2px 6px; font-size: 8px; background: green; color: white; letter-spacing: 1px;}
+	div.day.cutoff div.cutoffMarker {display: block; position: absolute; top: 4px; right: 0; padding: 2px 6px; font-size: 8px; background: #eeeeee; color: black; letter-spacing: 1px;}
+
+div.day span.num {
+	position: absolute;
+	font-size: 26px;
+	top: 0px;
+	left: 7px;
+}
+
+div.day span.posVotes, div.day span.negVotes {
+	position: absolute;
+	font-size: 12px;
+	padding: 3px;
+	color: #999999;
+	cursor: default;
+	text-decoration: underline;
+}
+
+div.day span.posVotes {
+	left: 14px;
+	bottom: 28px;
+}
+
+div.day span.negVotes {
+	right: 16px;
+	bottom: 28px;
+}
+
+h5.tooltip {
+	font-size: 13px;
+	color: #000000;
+}
+
+h5.tooltip span.positive {
+	color: #5d9f19;
+	text-transform: uppercase;
+}
+
+h5.tooltip span.negative {
+	color: #CA6969;
+	text-transform: uppercase;
+}
+
+li.tooltiplist img {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+div.day.disabled span.num {
+	color: #e6e6e6;
+}
+
+div.day img.good {
+	position: absolute;
+	left: 10px;
+	bottom: 7px;
+	width: 22px;
+}
+
+div.day img.bad {
+	position: absolute;
+	right: 10px;
+	bottom: 7px;
+	width: 22px;
+}
+
+div.calwrap {
+	border: 2px solid #cccccc;
+	margin-right: 4px;
+}
+
+div.calwrap hr {
+	margin-bottom: -3px;
+}
+
+/* ------------------------------------------------------------------------------------ Closed and Export */
+
+div.closed {
+	margin-left: 63px;
+	margin-top: 15px;
+}
+
+div.closed p {
+	padding: 0;
+	margin: 0;
+	color: #a1a1a0;
+	line-height: 18px;
+}
+
+div.details p.export {
+	padding: 15px 0;
+}
+
+div.details p.export img {
+	vertical-align: middle;
+}
+
+div.closed h3, div.details h3.closed {
+	font-size: 28px;
+	font-weight: normal;
+	color: #27a0ed;
+	padding: 0;
+	margin: 0;
+	letter-spacing: -1px;
+	line-height: 28px;
+	padding: 0;
+}
+
+div.closedcal h4 {
+	margin-left: 63px;
+}
+
+div.closedcal h4 a {
+	font-size: 13px;
+	display: block;
+	padding-right: 20px;
+	color: #a1a1a0 !important;
+	font-weight: normal;
+	background: url(/images/arrow.gif) no-repeat 206px bottom;
+	width: 210px;
+}
+
+div.closedcal h4 a:hover {
+	text-decoration: none;
+}
+
+div.closedcal h4.active a {
+	background: url(/images/arrow.gif) no-repeat 206px top;
+}
+
+span.cancelled {
+	color: #CA6969;
+}
+
+/* ------------------------------------------------------------------------------------ Flash Messages (Errors) */
+
+div.flash-msg {
+	position: relative;
+	z-index: 10;
+}
+
+div.flash-msg ul {
+	list-style-type: none;
+}
+
+ul#errorsList li, ul#modalErrorsList li  {
+	font-size: 12px;
+	color: #DF2929;
+	padding: 4px 0 4px 22px;
+	background: url(/images/cross.gif) no-repeat left 4px;
+}
+
+/* Yellow Error Style
+ul#messagesList li, ul#modalMessageList li {
+	font-size: 12px;
+	color: #D5A03C;
+	padding: 4px 0 4px 22px;
+	background: url(/images/error.png) no-repeat left 4px;
+}
+*/
+
+ul#messagesList li, ul#modalMessagesList  {
+	font-size: 12px;
+	color: #59A151;
+	padding: 2px 0 4px 22px;
+	background: url(/images/tick.gif) no-repeat left 4px;
+}
+
+/* ----------------------------------------------------------------------------------- No javascript error */
+
+.noscriptError {
+	color: #DF2929;
+	padding: 4px 0 4px 22px;
+	background: url(/images/cross.gif) no-repeat left 4px #59753c;
+}
+
+/* ------------------------------------------------------------------------------------ Sidebar */
+
+div.sidebar {
+	width: 185px;
+	float: left;
+	color: #A1A1A0;
+	padding-left: 20px;
+	border-left: 1px solid #dddddd;
+}
+
+div.sidebar ul {
+	padding: 0;
+}
+
+div.sidebar h4 {
+	color: #27a0ed;
+	padding-bottom: 3px;
+}
+
+/* ------------------------------------------------------------------------------------ Organizer Tools */
+
+div.orgtools {
+	padding-bottom: 15px;
+}
+
+div.orgtools ul {
+	list-style-type: none;
+	padding: 0px;
+}
+
+div.orgtools h4 {
+	font-size: 16px;
+}
+
+div.orgtools li {
+	font-size: 12px;
+}
+
+div.orgtools li img {
+	padding: 0 4px;
+	vertical-align: middle;
+}
+
+/* ------------------------------------------------------------------------------------ Countdown */
+
+div.countdown {
+	padding-bottom: 15px;
+}
+
+/* ------------------------------------------------------------------------------------ Guest List */
+
+div.whopics {
+	padding-bottom: 15px;
+}
+
+div.whopics ul {
+	padding-left: 5px;
+}
+
+div.whopics li {
+	padding-bottom: 5px;
+}
+
+div.whopics img {
+	vertical-align: middle;
+	float: left;
+	padding: 0 5px 5px 0;
+	clear: left;
+}
+
+div.whopics p {
+	line-height: 12px !important;
+	padding: 0 !important;
+}
+	div.whopics p.state { font-size: 10px; }
+		div.whopics p.state.notviewed { color: #aaaaaa; }
+		div.whopics p.state.viewed { color: #f3c366; }
+		div.whopics p.state.voted, div.whopics p.state.attending { color: #59A151; }
+		div.whopics p.state.notattending { color: #DF2929; }
+
+div.whopics div.text {
+	float: left;
+}
+
+div.whopics h4 a.guestslidetoggle {
+	color: #a1a1a0;
+	font-size: 11px;
+	font-weight: normal;
+	position: relative;
+	top: -1px;
+}
+
+/* ------------------------------------------------------------------------------------ Comments */
+
+div.comments {
+	padding-bottom: 15px;
+}
+
+div.comments ul {
+	list-style-type: none;
+	padding-left: 4px;
+}
+
+div.comments li {
+	padding-bottom: 15px;
+}
+
+div.comments img.photo {
+	float: left;
+	padding: 0 5px 0 0;
+}
+
+div.comments div.text {
+	float: left;
+	width: 150px;
+	line-height: 16px;
+	word-wrap: break-word;
+}
+
+div.comments p.date {
+	font-size: 11px;
+	padding: 0;
+	line-height: 14px;
+}
+
+div.comments textarea {
+	width: 180px;
+	height: 75px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+}
+
+input.commentbutton {
+	background: url(/images/add-comment-bg.jpg) no-repeat top left;
+	padding: 6px 25px 10px 25px;
+	color: #27a0ed;
+	border: none;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+input.commentbutton:hover {
+	color: #888888;
+}
+
+/* ------------------------------------------------------------------------------------ Footer */
+
+div.footer {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 0 60px 25px 60px;
+	position: relative;
+	top: -5px;
+	text-align: right;
+}
+
+div.footer ul {
+	list-style-type: none;
+}
+
+div.footer ul li {
+	display: inline;
+	padding: 0 4px;
+}
+
+div.footer a {
+	color: #ffffff;
+}
+
+div.footer a:hover {
+	text-decoration: none;
+}
+
+/* ------------------------------------------------------------------------------------ Nyro and blockUI CSS */
+
+.blockMsg {
+	padding: 0;
+    margin: 0;
+    top: 40%; 
+    left: 50%;
+    border: 3px solid #27a0ed;
+    background: #f7f6f1;
+    cursor: wait;
+    width: 300px;
+    margin-left: -150px
+}
+
+div.day .blockMsg {
+	padding: 0;
+    margin: 0;
+    cursor: wait;
+    width: auto;
+}
+
+div.buttonwrapper .blockMsg {
+ 	border: 0px;
+ 	background: #000000;
+ 	width:0px;
+}
+
+img.busy {
+	vertical-align: middle;
+	height: 15px;
+	width: 15px;
+	margin-right:10px;
+	margin-left:10px;
+}
+
+p.modalmessage {
+	padding: 10px 10px 10px 26px;
+	margin: 5px auto;
+	color: #27a0ed;
+	width: 160px;
+	font-size: 16px;
+}
+
+p.bigmodaltitle {
+	padding: 10px 10px 10px 26px;
+	margin: 5px auto;
+	width: 250px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+p.bigmodalmessage {
+	padding: 10px 10px 10px 26px;
+	margin: 5px auto;
+	color: #27a0ed;
+	width: 250px;
+	font-size: 13px;
+}
+
+p.modalmessage.first {
+	background: url(/images/busy-new-20px.gif) no-repeat left 10px;
+}
+
+div#nyroModalFull {
+	font-size: 12px;
+	color: #777;
+	font-family: Verdana;
+}
+div#nyroModalLoading {
+	border: 4px solid #777;
+	width: 150px;
+	height: 150px;
+	text-indent: -9999em;
+	background: #fff url(/images/ajaxLoader.gif) no-repeat;
+	background-position: center;
+}
+div#nyroModalLoading.error {
+	border: 4px solid #f66;
+	line-height: 20px;
+	padding: 20px;
+	width: 300px;
+	height: 100px;
+	text-indent: 0;
+	background: #fff;
+}
+div#nyroModalWrapper {
+	background: #F7F6F1;
+	border: 4px solid #27a0ed;
+}
+a#closeBut {
+	position: absolute;
+	display: block;
+	top: -11px;
+	right: -11px;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999em;
+	background: url(/images/close_red.gif) no-repeat;
+	outline: 0;
+}
+h1#nyroModalTitle {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -22px;
+	left: 5px;
+	font-size: 12px;
+	color: #ddd;
+}
+div.wrapper div#nyroModalContent {
+	padding: 10px 20px;
+}
+div.wrapperImg div#nyroModalContent {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+div.wrapperImg img {
+	vertical-align: baseline;
+}
+div.wrapperImg div#nyroModalContent div {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: black;
+	padding: 10px;
+	margin: 10px;
+	border: 1px white dotted;
+	overflow: hidden;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+div.wrapperImg div#nyroModalContent div:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	cursor: help;
+}
+a.nyroModalPrev, a.nyroModalNext {
+	z-index: 105;
+	outline: none;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 40%;
+	cursor: pointer;
+	text-indent: -9999em;
+	background-image: url(data:image/gif;base64,AAAA); /* Trick IE6 */
+}
+div.wrapperSwf a.nyroModalPrev, div.wrapperSwf a.nyroModalNext, div.wrapper a.nyroModalPrev, div.wrapper a.nyroModalNext {
+	height: 60%;
+	width: 20%;
+}
+a.nyroModalPrev {
+	left: 0;
+}
+a.nyroModalPrev:hover {
+	background: url(/images/prev.gif) left 20% no-repeat;
+}
+a.nyroModalNext {
+	right: 0;
+}
+a.nyroModalNext:hover {
+	background: url(/images/next.gif) right 20% no-repeat;
+}
+
+/* ------------------------------------------------------------------------------------ Tooltip CSS */
+
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	font-size: 12px;
+	width: 230px;
+}
+#tooltip h3, #tooltip div { margin: 0; }
+
+
+
+/* --------- countdown */
+#countdown {
+	width: 200px;
+}
+
+/* ------------------------------------------------------------------------------------ Date Range Picker CSS */
+
+input.daterange {
+	background:#FFFFFF none repeat scroll 0 0;
+	border:1px solid #666666;
+	color:#999999;
+	font-family:"Trebuchet MS";
+	font-size:13px;
+	padding:6px 5px;
+	width:150px;
+	float: right;
+}
+ 
+div.ui-daterangepicker {
+	font-size: 11px;
+}
