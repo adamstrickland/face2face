@@ -1,0 +1,2 @@
+module EventMetasHelper
+end

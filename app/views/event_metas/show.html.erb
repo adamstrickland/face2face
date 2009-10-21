@@ -1,0 +1,13 @@
+<p>
+  <b>Title:</b>
+  <%=h @event_meta.title %>
+</p>
+
+<p>
+  <b>Author:</b>
+  <%=h @event_meta.author %>
+</p>
+
+
+<%= link_to 'Edit', edit_event_meta_path(@event_meta) %> |
+<%= link_to 'Back', event_metas_path %>

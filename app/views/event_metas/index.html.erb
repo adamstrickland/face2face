@@ -1,0 +1,22 @@
+<h1>Listing event_metas</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+  </tr>
+
+<% @event_metas.each do |event_meta| %>
+  <tr>
+    <td><%=h event_meta.title %></td>
+    <td><%=h event_meta.author %></td>
+    <td><%= link_to 'Show', event_meta %></td>
+    <td><%= link_to 'Edit', edit_event_meta_path(event_meta) %></td>
+    <td><%= link_to 'Destroy', event_meta, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New event_meta', new_event_meta_path %>
