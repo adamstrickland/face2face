@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Flexvite</title>
+		<%= stylesheet_link_tag 'style', :media => 'screen' %>
+		<%= stylesheet_link_tag 'style', :media => 'screen' %>
+		<!--[if IE 8]>
+			<%= stylesheet_link_tag 'ie8', :media => 'screen' %>
+		<![endif]-->
+		<!--[if IE 7]>
+			<%= stylesheet_link_tag 'ie7', :media => 'screen' %>
+		<![endif]-->
+		<!--[if IE 6]>
+			<%= stylesheet_link_tag 'ie6', :media => 'screen' %>
+		<![endif]-->
+		<%= stylesheet_link_tag 'ui.daterangepicker', :media => 'screen' %>
+		<%= stylesheet_link_tag 'redmond/jquery-ui-1.7.1.custom', :media => 'screen', :title => 'ui-theme' %>
+		<%= javascript_include_tag 'jrails' %>
+		<%= javascript_include_tag 'jquery', 'jquery.autocomplete', 'jquery.cookies', 'jquery.jeditable', 'jquery.cookies' %>
+		<%= javascript_include_tag 'jquery.selectedplugins', 'jquery-ui', 'jquery-ui-1.7.1.custom-date', 'jquery.daterangepicker' %>
+		<%= javascript_include_tag 'flexvite' %>
+
+		<% if logged_in? %>
+		<script type="text/javascript"><!--
+		window.loggedIn = true;
+		//--></script>
+		<% end %>
+        
+		<%= render :partial => 'common/errors_and_messages_script' %>
+        
+        <script type="text/javascript"><!--
+        $(document).ready(function(){
+			checkCapabilities();
+        	makeFormsAsynchronous();
+        	$.blockUI.defaults.css = {}; // defer to style sheet settings 
+    	});
+        //--></script>
+	</head>
+	<body class="subpage">
+		<div class="navigation">		    			
+			<div class="container">
+				<ul>
+					<li>
+						<%= link_to "Create a Flexvite", wizard_url, :class => "create" %>
+					</li>
+				<% if logged_in? %>
+					<li>
+						<%= link_to "My Account", user_url, :class => "account" %>
+					</li>
+					<li>
+						<%= link_to "Logout", logout_url, :class => "login" %>
+					</li>
+				<% else %>
+					<li>
+						<%= link_to "Login", login_url, :class => "login" %>
+					</li>
+				<% end %>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header">
+				<h1>Flexvite</h1>
+				<div class="logo">
+					<% link_to homepage_url do %>
+						<%= image_tag 'flexvite-logo-small', :class => 'logo all', :title => 'Flexvite: Simple Social Planning' %>
+						<%= image_tag 'flexvite-logo-small-ie6', :class => 'logo ie6', :title => 'Flexvite: Simple Social Planning' %>
+					<% end %>
+					<%= image_tag 'beta-stamp', :class => 'beta' %>
+				</div>
+				<p class="feedback">
+					Help us improve during our beta; provide <a href="#" onclick="feedback_widget.show()" title="Leave feedback via Get Satisfaction">feedback</a>!
+				</p>
+			</div>
+
+			<noscript>
+				<h1 class="noscriptError">Your browser has JavaScript disabled! This site requires javascript to function correctly.  Please enable javascript and reload the page.</h1>
+			</noscript>
+
+    		<%= yield %>
+
+			<div class="footer">
+				<ul>
+					<li>&copy; 2009 Subspace Labs, LLC.</li>
+					<li><a href="http://www.addthis.com/bookmark.php?v=20" 
+							        addthis:url="http://www.flexvite.com"
+							        addthis:title="Flexvite"
+							        onmouseover="return addthis_open(this, '', 'http://www.flexvite.com', 'Flexvite');" 
+							        onmouseout="addthis_close();" 
+							        onclick="return addthis_sendto();">
+							        Share/Bookmark</a></li>
+					<li><a href="http://blog.flexvite.com" title="Blog">Blog</a></li>
+					<li><a href="/about" title="About Us">About</a></li>
+					<li><a href="http://www.twitter.com/flexvite" title="Follow us on Twitter">Twitter</a></li>
+					<li><a href="http://www.facebook.com/flexvite" title="Fan us on Facebook">Facebook</a></li>
+					<li><a href="/tos" title="Terms of Service">Terms</a></li>
+					<li><a href="/privacy" title="Privacy Policy">Privacy</a></li>
+				</ul>
+			</div>
+		</div>
+		<%= render :partial => 'common/add_this_widget' %>
+		<%= render :partial => 'common/get_satisfaction_widget' %>
+		<%= render :partial => 'common/google_analytics' %>
+	</body>
+</html>
