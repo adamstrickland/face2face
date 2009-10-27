@@ -40,7 +40,8 @@ class EventMetasController < ApplicationController
   # POST /event_metas
   # POST /event_metas.xml
   def create
-    @event_meta = EventMeta.new(params[:event_meta])
+    # @event_meta = EventMeta.new(params[:event_meta])
+    @event_meta = EventMeta.new(params[:event_meta].delete_if{ |k,v| !EventMeta.column_names.include?(k) })
 
     respond_to do |format|
       if @event_meta.save

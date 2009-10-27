@@ -1,0 +1,12 @@
+<div class="date" <%= 'style="display:none"' if event_meta.when %> >
+	<label for="dayfilter">When are you thinking?<br />
+	<span class="hint">Be flexible for better attendance</span></label>
+	<%= select 'event_meta', 'day_filter', EventMeta.day_filter_options, :class => 'select days', :tabindex => 3, :id => 'dayFilter' %>
+	<%= image_tag 'within.gif', :alt => 'within', :class => 'within' %>
+	<%= text_field 'event_meta', 'date_range', :class => 'daterange', :id => 'daterange', :value => 'the next 2 weeks' %>
+</div>
+<% if event_meta.when %>
+<div class="date">
+	<span class="hint">Event is scheduled for <i><%=event_meta.when %></i></span>
+</div>
+<% end %>

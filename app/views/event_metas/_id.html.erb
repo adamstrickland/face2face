@@ -1,0 +1,2 @@
+<label for="author">What's your email address?</label>
+<%= text_field 'event_meta', 'author', :class => "text full #{'disabled' if logged_in?}", :maxlength => 255, :tabindex => 7, :disabled => logged_in? %>

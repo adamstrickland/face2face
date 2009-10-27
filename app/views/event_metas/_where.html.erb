@@ -1,0 +1,20 @@
+<input style="display:none" id="priorAddressName" type="text"/>
+<div class="where">
+	<div class="typeLocation">
+		<label for="where">Where's it happening?<br/>
+		<span class="hint">Joe's House?  Starbucks?</span></label>
+		<%= text_field 'event_meta', 'where', :class => 'text short', :maxlength => 255, :tabindex => 2 %>
+		<%= hidden_field 'event_meta', 'map_link' %>
+		<div id="addresswrap">
+			<div id="address">
+			<% if event_meta.has_map_link? %>
+				<%= link_to(image_tag('map.png', :id => 'mapIcon'), event_meta.map_link, :target => '_blank') %>
+			<% end %>
+			</div>
+		</div>
+	</div>
+	<div class="searchLocation">
+		<button id='addAddressMapButton' type="button" onclick="pickLocationPopup(); return false;" class="addAddressMapButton">Add Address &amp; Map</button>
+    </div>
+    <hr />
+</div>

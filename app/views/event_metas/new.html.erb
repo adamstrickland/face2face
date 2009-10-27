@@ -1,27 +1,33 @@
-<%= javascript_include_tag 'event_meta/new' %>
+<%= stylesheet_link_tag 'jquery.autocomplete' %>
+<script type="text/javascript" charset="utf-8">
+</script>
+<!--
 <% ['util', 'basic', 'abc_launcher'].each do |js| %>
 	<%= javascript_include_tag "http://www.plaxo.com/css/m/js/#{js}.js" %>
 <% end %>
+-->
 <div class="content top">
 	<h2>Let's get some folks together</h2>
 </div>
 <div class="content middle">
 	<div class="shadow"></div>
-	<%= render :partial => 'errors_and_messages' %>
+	<%= render :partial => 'common/errors_and_messages' %>
 	<!-- <form class="admin" id="createEventForm" name="createEventForm" enctype="multipart/form-data" action="{% url CreateEventHandler %}.json" method="post"> -->
-	<% form_remote_for :meta, @meta, :url => event_meta_path(@meta), :format => 'json', :html => { :method => :put, :class => "admin", :id => "createEventForm" } do |f| %>
+	<% 
+	form_remote_for :event_meta, @event_meta, :url => { :action => 'create' }, :html => { :method => :post, :class => "admin", :id => "createEventForm" } do |f| 
+	%>
 		
 		<input type="hidden" name="startTimeTimeZone" id="startTimeTimeZone" value="Central" />
 		
 		<div class="column left what">
 			<% ['what', 'where', 'day', 'time'].each do |p| %>
-				<%= render :partial => p %>
+				<%= render :partial => p, :locals => { :event_meta => @event_meta } %>
 			<% end %>
 		</div>
 	
 		<div class="column right name">
-			<% ['name','id','invitees'].each do |p| %>
-				<%= render :partial => p %>
+			<% ['name','id','who'].each do |p| %>
+				<%= render :partial => p, :locals => { :event_meta => @event_meta } %>
 			<% end %>
 			
     		<div class="buttonwrapper alignright">
@@ -32,7 +38,7 @@
 	    		</span>
 	    	</div>
     		<hr />
-			<%= render :partial => 'advanced_options' %>
+			<%= render :partial => 'advanced_options', :locals => { :event_meta => @event_meta } %>
 		</div>
 	<% end %>
 	<!-- </form> -->

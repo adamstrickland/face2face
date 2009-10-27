@@ -1,0 +1,10 @@
+<label for="who">Who do you want to invite?<br />
+<span class="hint">Separate multiple emails with a comma or <a href="#" onclick="showPlaxoABChooser('who', '/plaxo_cb.html'); return false">Import</a></span>
+</label>
+<%= text_area 'event_meta', 'who', :class => 'invitees', :tabindex => 8, :rows => 4, :cols => 60 %>
+<div id="emailCount">
+	<label id="indent45"></label>
+    <div id="emailValidationMessage">
+        &nbsp;
+    </div>
+</div>

@@ -1,37 +1,37 @@
 <div class="advanced">
-	<h4 class="slidetoggle"><a href="#">Advanced Options</a></h4>
+	<h4 id="advanced_options_slidetoggle" class="slidetoggle"><a href="#">Advanced Options</a></h4>
 	<div class="slidecontainer" style="display:none">
 		<span class="hint advanced"><!-- Because you know you want to. --></span>
 		<br/>
-		<% if not meta.closed? %>
+		<% if event_meta.closed? %>
 		<br/><span class="hint advanced">Event has closed, can't edit advanced options.</span>
 		<% else %>
-			<% if not meta.allow_comments? %>
+			<% if not event_meta.allow_comments? %>
 			<label for="description">
 				Would you like to leave a comment?<br />
 				<span class="hint">Post the first comment to share more details or lobby for a day</span>
 			</label>
-			<textarea class="invitees" id="description" name="description" tabindex="10" rows="6" cols="50"></textarea>
+			<%= text_area 'event_meta', 'description', :class => 'invitees', :tabindex => 10, :rows => 6, :cols => 50 %>
 			<br/>
 			<% end %>
-			<%= checkbox 'meta', 'send_auto_reminder', :class => 'checkbox' %>
+			<%= check_box 'event_meta', 'send_auto_reminder?', :class => 'checkbox' %>
 			<span class="advancedoptiontext">
-				Send a reminder <%= select 'meta','auto_reminder_days', options_for_select(1..5, meta.auto_reminder_days), :class => 'dayCountDropDown' %> days before event
+				Send a reminder <%= select 'event_meta','auto_reminder_days', options_for_select(1..5, event_meta.auto_reminder_days), :class => 'dayCountDropDown' %> days before event
 			</span>
 			<br/>
-			<%= checkbox 'meta', 'allow_forwarding', :class => 'checkbox' %>
+			<%= check_box 'event_meta', 'allow_forwarding?', :class => 'checkbox' %>
 			<span class="advancedoptiontext">Guests can invite other guests</span>
 			<br/>
-			<%= checkbox 'meta', 'require_minimum', :class => 'checkbox' %>
+			<%= check_box 'event_meta', 'require_minimum?', :class => 'checkbox' %>
 			<span class="advancedoptiontext">
-				Cancel if less than <%= select 'meta', 'minimum_positive_votes', options_for_select(1..5, meta.minimum_positive_voters), :class => 'dayCountDropDown' %> can attend.
+				Cancel if less than <%= select 'event_meta', 'minimum_positive_votes', options_for_select(1..5, event_meta.minimum_positive_votes), :class => 'dayCountDropDown' %> can attend.
 			</span>
 			<br/>
-			<%= checkbox 'meta', 'cutoff_voting', :class => 'checkbox' %>
+			<%= check_box 'event_meta', 'cutoff_voting?', :class => 'checkbox' %>
 			<span class="advancedoptiontext">
-				Auto-select winner in <%= select 'meta','voting_cutoff_days', options_for_select(1..5, meta.voting_cutoff_days), :class => 'dayCountDropDown' %> days
+				Auto-select winner in <%= select 'event_meta','voting_cutoff_days', options_for_select(1..5, event_meta.voting_cutoff_days), :class => 'dayCountDropDown' %> days
 			</span><br/>
-			<%= checkbox 'meta', 'organizer_required', :class => 'checkbox' %>
+			<%= check_box 'event_meta', 'organizer_required?', :class => 'checkbox' %>
 			<span class="advancedoptiontext">Disable days the organizer votes against</span>
 			<br/>
 		<% end %>
